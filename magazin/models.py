@@ -34,3 +34,10 @@ class Buyer(models.Model):
         pochta = models.EmailField(default='exaple@example.com', max_length=300, verbose_name='Напишите почту')
         def __str__(self):
             return self.name
+
+
+class Review(models.Model):
+        class Meta():
+            db_table = 'review'
+        review_text = models.TextField(verbose_name="Отзвы к продукту:")
+        review_buyer = models.ForeignKey(Buyer)
