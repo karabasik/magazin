@@ -1,0 +1,158 @@
+/*подробная информация о продукте*/
+.flex-container{
+    display: flex;
+    box-shadow: 0 0 4px 0 silver;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin-left: 210px;
+    margin-right: 210px;
+    border-radius: 8px;
+    justify-content:space-around;
+    flex-direction: row;
+    background: rgba(1,1,1,0.5);
+}
+.btn_1 {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+    border-radius: 8px;
+}
+.btn_1:hover{
+     box-shadow: 0 0 1px 1px silver;
+     color:whitesmoke;
+     transition: 6ms;
+}
+.flex_info{
+
+    word-wrap:break-word;
+    color: silver;
+    box-shadow: 0 0 4px 0 silver;
+    margin-left:210px;
+    margin-right:210px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 25px;
+    background: rgba(1,1,1,0.5);
+}
+
+
+.flex-items, .flex-ad, .flex-picture{
+    box-shadow: 0 0 10px 5px black;
+    padding: 10px;
+    height: auto;
+    width: 180px;
+    color: silver;
+    text-align:center;
+    border-radius: 8px;
+}
+
+
+.flex-text{
+    box-shadow: 0 0 10px 5px black;
+    display: block;
+    height: auto;
+    padding: 20px;
+    color: whitesmoke;
+    border-radius: 8px;
+    margin: 25px;
+}
+
+h3{
+    margin:3px;
+    width: 100%;
+}
+/* до сюдово*/
+
+.box{
+    text-align: center;
+    box-shadow: 0 0 5px 0 #464457;
+    width: 250px;
+    border-radius: 5px;
+    myargin: 10px;
+}
+
+body{
+    background-size: 100%;
+    background-image:url("/static/img/bkg.jpg");
+    background-attachment:fixed;
+}
+a:link, a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+
+
+/*Блоки на глайной странице*/
+.my-flex-box{
+    box-shadow: 0 0 4px 0 silver;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    margin-left: 210px;
+    margin-right: 210px;
+    background: rgba(2,1,1,0.5);
+    color: whitesmoke;
+}
+
+.my-flex-block{
+    padding:5px;
+    width: 150px;
+    height:200px;
+    box-shadow: 0 0 10px 5px black;
+    margin: 10px;
+    background: rgba(1,1,1,0);
+    display: block;
+    border-radius: 8px;
+}
+
+.my-flex-block:hover{
+    box-shadow: -1px 0 11px 1px silver;
+    transition: 6ms;
+}
+
+.btn.btn-2{
+        align-items: flex-end;
+}
+
+
+/* Типа верхнее меню*/
+.navbar-brand{
+    padding-top: 25px;
+}
+
+.btn{
+    margin-top: 17px;
+    background-color: rgba(0, 0, 0, 0);
+    color: silver;
+    margin-left: 142px;
+}
+.btn:hover{
+     box-shadow: 0 0 1px 1px silver;
+     color:whitesmoke;
+     transition: 6ms;
+}
+
+/*рисунок*/
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.flex-top-picture-box {
+    padding-left: 10%;
+    justify-content: center;
+    height: 150px;
+    width: 130px;
+}
+
+.bottom{
+    background-color: black;
+    height: auto;
+    width: auto;
+}

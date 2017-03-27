@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+<body>
+
+        {% block product %}
+                <div class="flex-container">
+                    <div class="flex-picture">
+                        {% if product.image %}
+                            <img src="{{ product.image.url}}">
+                        {% else %}
+                             Image not found
+                        {% endif %}
+                    </div>
+                    <div class="flex-items">
+                        <h3>{{ product.name }}</h3>
+                        <h4>Цена: {{ product.price }} руб.</h4>
+                        <h4>В наличии: {{ product.sum}}</h4>
+                        <h4>Тип: {{ product.type }}</h4>
+                        <div class="btn_1">
+                                <a href="#">
+                                    Добавить в корзину
+                                </a>
+                        </div>
+                    </div>
+                    <div class="flex-ad">
+                       {{ product.stock }}
+                    </div>
+                </div>
+                <div class="flex_info">
+                        <h4> Информация:</h4>
+                        <div class="flex-text">
+                            <h5>
+                                {{ product.inform }}
+                            </h5>
+                        </div>
+                </div>
+        {% endblock %}
+
+</body>

@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+    {% block product %}
+        <div class="my-flex-box">
+            {% for product in products %}
+                <a href="/products/{{ product.id }}/">
+                <div class="my-flex-block">
+                <h5 align="center">{{product.name }}</h5>
+                <div class="flex-top-picture-box">
+                        {% if product.image %}
+                            <img src="{{ product.image.url }}">
+                         {% else %}
+                            Image not found
+                        {% endif %}
+                    </div>
+                </div>
+                </a>
+            {% endfor %}
+        </div>
+    {% endblock  %}
+</body>
