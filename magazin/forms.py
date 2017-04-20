@@ -1,8 +1,10 @@
-from django.forms import ModelForm
-from .models import Review
+from django import forms
+
+class ReviewForm(forms.Form):
+    review_text = forms.CharField()
+    review_buyer = forms.IntegerField()
 
 
-class ReviewForm(ModelForm):
-        class Meta():
-            model = Review
-            fields = ['review_text']
+class LoginForm(forms.Form):
+    user = forms.CharField(max_length=100)
+    password = forms.CharField(widget=forms.PasswordInput())

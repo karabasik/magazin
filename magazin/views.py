@@ -1,6 +1,8 @@
-from django.shortcuts import render_to_response, render
+#-*- coding: utf8 -*-
+from django.shortcuts import render_to_response, redirect
 from .models import Product
 from django.template.context_processors import csrf
+from .forms import *
 
 
 
@@ -28,3 +30,10 @@ def smartphone(request):
 
 def tablets(request):
     return render_to_response('tablets.html', {'products': Product.objects.filter(type='tablet')})
+
+
+def cart(request):
+    Product.sum = -1
+    return render_to_response('cart.html', {'products': Product.objects.all()})
+
+

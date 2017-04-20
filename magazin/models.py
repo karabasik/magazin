@@ -6,9 +6,9 @@ from django.db import models
 
 
 choice_type = (
-    ('phone', 'телефон'),
-    ('smartphone', 'смартфон'),
-    ('tablet', 'планшет'),
+    ('Phone', 'телефон'),
+    ('Smartphone', 'смартфон'),
+    ('Tablet', 'планшет'),
 )
 
 
@@ -21,7 +21,7 @@ class Product(models.Model):
         sum = models.CharField(max_length=5, default='1', verbose_name='Количество в наличии')
         type = models.CharField(max_length=123, choices=choice_type)
         inform = models.TextField(default='Текст', verbose_name='Описание телефона: ПЗУ,ОЗУ,аудио и т.д')
-        image = models.ImageField(blank=True, upload_to='images', help_text='250x500px', verbose_name='Image')
+        image = models.ImageField(blank=True, upload_to='images', help_text='Желанный размер 150x200px', verbose_name='Image')
         def __str__(self):
             return self.name
 

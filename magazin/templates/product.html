@@ -1,6 +1,5 @@
 {% extends 'main.html' %}
 <body>
-
         {% block product %}
                 <div class="flex-container">
                     <div class="flex-picture">
@@ -16,7 +15,7 @@
                         <h4>В наличии: {{ product.sum}}</h4>
                         <h4>Тип: {{ product.type }}</h4>
                         <div class="btn_1">
-                                <a href="#">
+                                <a href="/cart">
                                     Добавить в корзину
                                 </a>
                         </div>
